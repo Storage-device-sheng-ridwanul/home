@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Storage Devices</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="style.css" rel="stylesheet">
+	<!--The scource link under is for the menu and close icon we used for this website-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+	<div class="Web1">
+	<div class="WebBar">
+		<div class="WebLogo">
+			<img src="Logo.png" alt="Logo">
+		</div>
+			<div class="Other-Links" id="Links">
+				<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to close the menu-->
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="Gaming.html"><li>Gaming</li></a>
+					<a href="#"><li>Programing</li></a>
+					<a href="#"><li>Future Trend</li></a>
+				</ul>
+					
+			</div>
+		<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to open the menu-->
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+		<div class="Title">
+			<h1>Information<br>About <span>Storage Devices</span>.</h1>
+		</div>
+		<div class="vertical-bar">
+			<div class="Menu"> <!--Still not sure if we are going to use this. Left it here just in case we do. Right this is useless-->
+				<!--the class under is actually calling the image from the link source above-->
+				<i class="fa fa-th-list"></i>
+			</div>
+		</div>
+	</div>
+	
+	<!--This function is for when the user restore down(a.k.a makes the window smaller) the web the content and words dont get messy-->
+    <script>
+		var show = document.getElementById("Links")
+		function showMenu(){
+			show.style.right= "0";
+		}
+		function closeMenu(){
+			show.style.right= "-200px";
+		}
+	</script>
+  </body>
+</html>

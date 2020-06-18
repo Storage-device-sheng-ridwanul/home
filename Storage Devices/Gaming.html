@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gaming</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="style1.css" rel="stylesheet">
+	<!--The scource link under is for the menu and close icon we used for this website-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+	<div class="Web1">
+	<div class="WebBar">
+		<div class="WebLogo">
+			<img src="Logo.png" alt="Logo">
+		</div>
+			<div class="Other-Links" id="Links">
+				<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to close the menu-->
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="Gaming.html"><li>Gaming</li></a>
+					<a href="#"><li>Programing</li></a>
+					<a href="#"><li>Future Trend</li></a>
+				</ul>
+					
+			</div>
+		<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to open the menu-->
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+		<div class="Title">
+			<h1><span>HDD</span> or <span>SSD</span> For Gaming?.</h1>
+		</div>
+		<div class="vertical-bar">
+			<div class="Menu"> <!--Still not sure if we are going to use this. Left it here just in case we do. Right this is useless-->
+				<!--the class under is actually calling the image from the link source above-->
+				<i class="fa fa-th-list"></i>
+			</div>
+		</div>
+	</div>
+	<span class="horizontal-line">
+	<div class="content">
+		<div class="header">
+			<h1>Why does it <mark>Matter</mark>?</h1>
+		</div>
+		<div class="paragraph">
+			<p><b>Storage drives store games and any preloaded files for online gameplay. You will need enough storage space to store 
+			<br>your games and anything else that you may have on your computer. HDD (Hard drives) and SSD (Solid-state drives) are 
+			<br>options that a consumer has to decide on. They both store data but are both different from the perspective of the technology for 
+			<br>these storage devices.</b></p>
+			<div class="row">
+				<div class="image">
+					<div class="img1"><img src="HDD.svg.png"></div>
+				</div>
+				<div class="image">
+					<div class="img2"><img src="SSD.webp"></div>
+				</div>
+			</div>
+		</div>
+		<div class="Second-part">
+			<div class="header2">
+				<h2>HDD <span>V.S.</span> SDD</h2>
+			</div>
+		</div>
+	</div>
+	<!--This function is for when the user restore down(a.k.a makes the window smaller) so the web the content and words dont get messy-->
+    <script>
+		var show = document.getElementById("Links")
+		function showMenu(){
+			show.style.right= "0";
+		}
+		function closeMenu(){
+			show.style.right= "-200px";
+		}
+	</script>
+  </body>
+</html>
