@@ -5,7 +5,7 @@
 }
 .Web1{
 	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Background.jpeg);
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Background2.jpg);
 	background-position: center;
 	background-size: cover;
 	overflow-x: hidden;
@@ -84,7 +84,7 @@
 	display: none; /*this hides the menu bar until the user makes the window small enough*/
 }
 /* This makes the website responsive*/
-@media (max-width: 700px){
+@media (max-width: 1000px){
 	.vertical-bar{
 		display: none;
 	}
@@ -123,4 +123,63 @@
 	.Other-Links ul a{
 		display: block;
 	}
+}
+.horizontal-line{
+	border-top: 20px solid yellow;
+	display: block;
+}
+
+.header{
+	padding: 10px 30px;
+}
+.img1 img{
+	padding: 10px 30px;
+	width: 50%;
+	height: 50%;
+	border-color: yellow;
+}
+.content-part-2 h3{
+	padding: 10px 30px;
+}
+p {
+	padding: 10px 30px;
+	color: gray;
+}
+.img2 img{
+	padding: 10px 30px;
+}
+.img3 img{
+	padding: 10px 30px;
+	width: 50%;
+	height: 50%;
+}
+.img4 img{
+	padding: 10px 30px;
+	width: 50%;
+	height: 50%;
+}
+.img5 img{
+	padding: 10px 30px;
+	width: 50%;
+	height: 50%;
+}
+.img6 img{
+	padding: 10px 30px;
+	width: 40%;
+	height: 40%;
+}
+.img7 img{
+	padding: 10px 30px;
+	width: 30%;
+	height: 30%;
+}
+.img8 img{
+	padding: 10px 30px;
+	width: 50%;
+	height: 50%;
+}
+.horizontal-line2{
+	padding: 30px;
+	border-bottom: 40px solid yellow;
+	display: block;
 }
