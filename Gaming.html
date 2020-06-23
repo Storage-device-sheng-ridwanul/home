@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gaming</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="style1.css" rel="stylesheet">
+	<!--The scource link under is for the menu and close icon we used for this website-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+	<div class="Web1">
+	<div class="WebBar">
+		<div class="WebLogo">
+			<img src="Logo.png" alt="Logo">
+		</div>
+			<div class="Other-Links" id="Links">
+				<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to close the menu-->
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="Gaming.html"><li>Gaming</li></a>
+					<a href="history.html"><li>History</li></a>
+				</ul>
+					
+			</div>
+		<!--the class under is actually calling the image from the link source above and when clicked on it gives a command to open the menu-->
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>
+		<div class="Title">
+			<h1><span>HDD</span> or <span>SSD</span> For Gaming?.</h1>
+		</div>
+		<div class="vertical-bar">
+			<div class="Menu"> <!--Still not sure if we are going to use this. Left it here just in case we do. Right this is useless-->
+				<!--the class under is actually calling the image from the link source above-->
+				<i class="fa fa-th-list"></i>
+			</div>
+		</div>
+	</div>
+	<span class="horizontal-line">
+	<div class="content">
+		<div class="header">
+			<h1>Why does it <mark>Matter</mark>?</h1>
+		</div>
+		<div class="paragraph">
+			<p><b>Storage drives store games and any preloaded files for online gameplay. You will need enough storage space to store 
+			<br>your games and anything else that you may have on your computer. HDD (Hard drives) and SSD (Solid-state drives) are 
+			<br>options that a consumer has to decide on. They both store data but are both different from the perspective of the technology for 
+			<br>these storage devices.</b></p>
+			<div class="row">
+				<div class="image">
+					<div class="img1"><img src="HDD.svg.png"></div>
+				</div>
+				<div class="image">
+					<div class="img2"><img src="SSD.webp"></div>
+				</div>
+			</div>
+		</div>
+		<div class="Second-part">
+			<div class="header2">
+				<h2>HDD <span>V.S.</span> SDD</h2>
+			</div>
+			<div class="content-part-2">
+				<h3>1. Access Time</h3>
+				<p>		Access time is total time it takes a computer to request data, and then that request to be met.
+				<br>HDD access times are much slower than SSD because HDD have moving parts, like spinning plates and moving
+				<br>read/write heads. To access needed data the heads must move to the tracks on the spinning plates where data 
+				<br>is located. And the SSD </p>
+				<h3>2. Random I/O</h3>
+				<p>		Random I/O(Input and Output) is the storage device ability to randomly access information and retrieve it.
+				<br>HDD have been completly outmatched in this case because as we have mentioned before SSDs have no moving parts, so 
+				<br>SSDs doesn't have any the physical limits like what an HDD would have. SSDs are 15 times faster at requesting and retrieving
+				<br>data. Where HDD runs about 400 io/s (input/output per second) while SSDs runs 6000 io/s!
+				</p> 
+				<h3>3. Reliability</h3>
+				<p>		SSDs can survive in extreme and harsh environments because they don't have moving parts such as actuator 
+				<br>arms unlike it's mechanical competition. SSDs can withstand accidental drops and other shocks, vibration, extreme 
+				<br>temperatures, and magnetic fields better than HDDs.
+				</p>
+				<h3>4. Backup rates</h3>
+				<p>		Backup rates is how long it takes devices to backup it's information. It takes SSDs 6 hours to completly backup
+				<br>information, while it takes HDD 20-24 hours to completly backup.
+				</p>
+				<h3>5. Energy Saving</h3>
+				<p>		Energy saving in the perspective of HHD and SSDs would mean which storage device consumes the least amount of power.
+				<br>The winner in which storage device is more eco-friendly is the SSD. The SSD consumes 2-5 watts per hour while the HDD consumes
+				<br>about 6-15 watts.
+				</p>
+				<h3>6. Cost</h3>
+				<p>		The price of HDD compared to the price of SSD to the amount of storage it has is in the favour of HDDs. SSD are actually pretty 
+				<br>costly for the price of $50 you can get 250gb but for the same price you can get an HDD that holds 1TB of storage. So, the ratio of storage
+				<br>from SSD to HDD is 1:4 = 250gb:1000gb. 				
+				</p>
+				<div class="image2"><img src="table.PNG"></div>
+				
+			</div>
+			<span class="horizontal-line2">
+		</div>
+	</div>
+	<!--This function is for when the user restore down(a.k.a makes the window smaller) so the web the content and words dont get messy-->
+    <script>
+		var show = document.getElementById("Links")
+		function showMenu(){
+			show.style.right= "0";
+		}
+		function closeMenu(){
+			show.style.right= "-200px";
+		}
+	</script>
+  </body>
+</html>
